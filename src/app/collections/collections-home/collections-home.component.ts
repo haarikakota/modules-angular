@@ -1,4 +1,3 @@
-import { stripSummaryForJitNameSuffix } from '@angular/compiler/src/aot/util';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,12 +9,12 @@ export class CollectionsHomeComponent implements OnInit {
   data = [
     { name: 'James', age: 24, job: 'Designer' },
     { name: 'Jill', age: 26, job: 'Developer' },
-    { name: 'Elyse' ,age: 25, job: 'Engineer' } 
+    { name: 'Elyse', age: 25, job: 'Engineer' }
   ];
-  headers= [
+  headers = [
     { key: 'name', label: 'Name' },
-    {key: 'age', label: 'Age' },
-    {key: 'job', label:'Job' }
+    { key: 'age', label: 'Age' },
+    { key: 'job', label: 'Job' }
   ];
 
   constructor() { }
