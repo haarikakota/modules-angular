@@ -5,7 +5,10 @@
     <p>
         I am a REUSABLE window!!!
     </p>
-    <div modalFooter>
+    <ng-container modalFooter>
         <button (click)="onClick()" class="ui button"> OK </button>
-    </div>
+    </ng-container>
 </app-modal>
+
+<app-divider>Accordion Component</app-divider>
+<app-accordion [items]="items"></app-accordion>
