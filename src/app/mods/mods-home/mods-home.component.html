@@ -1,3 +1,11 @@
 <app-divider>Modal Component</app-divider>
-
-<app-modal></app-modal>
+<button (click)="onClick()">Show Modal</button>
+<app-modal (close)="onClick()" *ngIf="modalOpen">
+    <div modalTitle>I am a reusable title!</div>
+    <p>
+        I am a REUSABLE window!!!
+    </p>
+    <div modalFooter>
+        <button (click)="onClick()" class="ui button"> OK </button>
+    </div>
+</app-modal>
